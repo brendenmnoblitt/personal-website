@@ -9,3 +9,4 @@ You can visit my website [here](https://www.brendennoblitt.me)
 * **Front-End**: React.js
 * **Back-End**: Flask
 * **Hosting**: PythonAnywhere
+* **Styling**: TailwindCSS
