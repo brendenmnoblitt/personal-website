@@ -8,7 +8,9 @@ const Projects = () => {
       <h2 className="flex text-2xl justify-center font-medium mb-4">
         Projects
       </h2>
-      <h3 className="pt-2 text-xl">Overwatch League Web App</h3>
+      <h3 className="pt-2 text-xl">
+        <strong>Overwatch League Web App</strong>
+      </h3>
       <div className="flex flex-col-reverse md:flex-row text-center justify-center">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-8">
