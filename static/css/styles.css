@@ -1,0 +1,185 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+  }
+
+nav {
+  background-color: #333;
+}
+
+footer {
+  background-color: #333;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+i:hover{
+  transform: scale(1.25);
+  transition: 0.75s ease-out;
+}
+
+  #social-icon {
+    color: black;
+    text-decoration: none;
+  }
+
+  .hero {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+  }
+  .hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .project {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .project h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .project p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  #textToHover {
+    font-family: monospace;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+  #textToHover:hover {
+      color: red;
+  }
+
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center;
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212529;
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #212529;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode #social-icon {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode p {
+  color: #fff;
+}
+
+.dark-mode .timeline-steps .timeline-content .inner-circle {
+  background-color: #fff;
+}
+
+.dark-mode .timeline-steps .timeline-content .inner-circle:before {
+  background-color: #fff;
+}
+
+  /* Dark mode link styles */
+/* .dark-mode a {
+  color: #fff;
+} */
+
+.dark-mode a:hover {
+  color: #fff;
+}
+
+.dark-mode .project {
+  background-color: #4e4e4e;
+}
+
+.dark-mode .card {
+  background-color: #4e4e4e;
+}
+
+@media (min-width:768px) {
+  .timeline-steps .timeline-step:not(:last-child):after {
+      content: "";
+      display: block;
+      border-top: .25rem dotted #212529;
+      width: 3.46rem;
+      position: absolute;
+      left: 7.5rem;
+      top: .3125rem;
+  }
+  .timeline-steps .timeline-step:not(:first-child):before {
+      content: "";
+      display: block;
+      border-top: .25rem dotted #212529;
+      width: 3.8125rem;
+      position: absolute;
+      right: 7.5rem;
+      top: .3125rem;
+  }
+  .dark-mode .timeline-steps .timeline-step:not(:last-child):after {
+      border-top: .25rem dotted #fff;
+  }
+  .dark-mode .timeline-steps .timeline-step:not(:first-child):before {
+      border-top: .25rem dotted #fff;
+  }
+}
