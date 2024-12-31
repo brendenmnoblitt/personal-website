@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const textToCode = document.getElementById("textToCode");
     
     textToCode.addEventListener("mouseenter", () => {
-        textToCode.innerHTML = "<code>hello, my name is @brendenmnoblitt</code>";
+        textToCode.innerHTML = "<code>hello, my name is @0xN0b</code>";
     });
 
     textToCode.addEventListener("mouseleave", () => {
