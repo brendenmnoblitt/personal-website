@@ -2,146 +2,203 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brenden Noblitt - Software Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/css/styles.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brenden Noblitt — Software Developer</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Portfolio of Brenden Noblitt, Software Developer and BI Engineer in Dallas, TX. I build data-driven systems, full-stack apps, and AI-integrated solutions." />
+    <meta name="keywords"
+        content="Brenden Noblitt, software developer, data engineer, AI, Dallas, TAMUC, Mouser Electronics" />
+    <meta property="og:title" content="Brenden Noblitt — Software Developer" />
+    <meta property="og:description" content="I design and code data-driven systems and full-stack applications." />
+    <meta property="og:image" content="static/img/DSC_5944.jpg" />
+    <meta property="og:url" content="https://www.brendennoblitt.me/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Styles & Scripts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="static/css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/47a299450b.js" crossorigin="anonymous"></script>
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6YP31PRC1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        function gtag() { dataLayer.push(arguments); }
         gtag("js", new Date());
         gtag("config", "G-S6YP31PRC1");
     </script>
-    <script src="https://kit.fontawesome.com/47a299450b.js" crossorigin="anonymous"></script>
-    <meta name="keywords"
-        content="Brenden, Noblitt, brenden, noblitt, data, engineer, software, developer, full-stack, software, web" />
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand text-white" href="#">My Portfolio</a>
-                <div class="container pt-2">
-                    <div class="theme-switch-wrapper">
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
-                                aria-label="Dark Mode Toggle">
-                            <label class="form-check-label text-white" for="flexSwitchCheckDefault">Dark Mode</label>
-                            <i class="fa-regular fa-sun" style="color: #ffffff;" id="theme-icon" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-
+                <a class="navbar-brand text-white" href="#">Brenden Noblitt</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#about-me-section">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#skills-section">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#latest-projects-section">Projects</a>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#about-me-section">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#skills-section">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#latest-projects-section">Projects</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
-        <section class="hero">
-            <div class="container text-center text-dark">
-                <img src="static/img/avatar.svg" alt="my avatar" width="250" height="250" class="mb-4">
-                <h1 id="textToCode">Hello, my name is Brenden</h1>
-                <p>I design and <code>code</code> systems and software solutions</p>
-                <a href="https://github.com/brendenmnoblitt" target="_blank" class="px-3"><i
-                        class="fa-brands fa-3x fa-github" id="social-icon"></i></a>
-                <a href="https://www.linkedin.com/in/brendennoblitt" target="_blank" class="px-3"><i
-                        class="fa-brands fa-3x fa-linkedin" id="social-icon"></i></a>
-                <a href="mailto:bnoblitt99@gmail.com" target="_blank" class="px-3"><i class="fa-solid fa-3x fa-envelope"
-                        id="social-icon"></i></a>
+        <!-- Hero -->
+        <section class="hero text-center text-white">
+            <div class="hero-bg" aria-hidden="true">
+                <svg class="noise" width="100%" height="100%" preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="g" cx="50%" cy="50%">
+                            <stop offset="0%" stop-color="#ff6ec7" />
+                            <stop offset="50%" stop-color="#7ae7ff" />
+                            <stop offset="100%" stop-color="#9d7aff" />
+                        </radialGradient>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#g)" opacity="0.15" />
+                </svg>
+                <canvas id="particle-canvas" aria-hidden="true"></canvas>
             </div>
-        </section>
-        <section class="container mt-3 mb-5 text-center" id="about-me-section">
-            <h2 class="mb-5">About Me</h2>
-            <div class="container-sm mb-3">
-                <p class="lead">
-                    I'm a <code>software developer</code> based in Dallas-Fort
-                    Worth, TX. I enjoy working with a variety of technologies and domains, most recently with
-                    web, data, and machine learning. I am currently focused on building
-                    full stack data applications and infrastructure for
-                    <a href="https://www.mouser.com/" target="_blank">
-                        Mouser Electronics
-                    </a> while also working on a graduate degree in Computer Science at
-                    <a href="https://www.tamuc.edu/" target="_blank">East Texas A&M University.</a>
-                </p>
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col mb-5">
-                            <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
-                                <div class="timeline-step">
-                                    <div class="timeline-content">
-                                        <div class="inner-circle"></div>
-                                        <p class="h6 mt-3 mb-1">May 2021</p>
-                                        <p class="h6 mb-0 mb-lg-0">🧑‍🎓 Graduated B.S. Marketing Analytics @ Oklahoma
-                                            State University
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="timeline-step">
-                                    <div class="timeline-content">
-                                        <div class="inner-circle"></div>
-                                        <p class="h6 mt-3 mb-1">Jun 2021</p>
-                                        <p class="h6 mb-0 mb-lg-0">👨‍💻 Marketing Analyst @ Mouser Electronics</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-step">
-                                    <div class="timeline-content">
-                                        <div class="inner-circle"></div>
-                                        <p class="h6 mt-3 mb-1">Feb 2022</p>
-                                        <p class="h6 mb-0 mb-lg-0">👨‍💻 BI Developer I @ Mouser Electronics</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-step">
-                                    <div class="timeline-content">
-                                        <div class="inner-circle"></div>
-                                        <p class="h6 mt-3 mb-1">Dec 2022</p>
-                                        <p class="h6 mb-0 mb-lg-0">👨‍💻 BI Developer II @ Mouser Electronics</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-step">
-                                    <div class="timeline-content">
-                                        <div class="inner-circle"></div>
-                                        <p class="h6 mt-3 mb-1">Jan 2025</p>
-                                        <p class="h6 mb-0 mb-lg-0">🏫 Started M.S. Computer Science @ East Texas A&M
-                                            University</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-step">
-                                    <div class="timeline-content">
-                                        <div class="inner-circle"></div>
-                                        <p class="h6 mt-3 mb-1">Jun 2025</p>
-                                        <p class="h6 mb-0 mb-lg-0">👨‍💻 BI Developer III @ Mouser Electronics</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+            <div class="container hero-inner">
+                <div class="avatar-wrap mb-4">
+                    <img src="static/img/DSC_5944.jpg" alt="avatar" class="avatar" />
+                </div>
+                <h1 class="display-1 glitch">Hello, I’m <span class="brand-name">Brenden</span></h1>
+                <p class="lead hero-sub">I design and <code>code</code> data-driven systems, full-stack apps, and
+                    delightful experiences.</p>
+
+                <div class="hero-cta mt-4">
+                    <a href="mailto:bnoblitt99@gmail.com?subject=Requesting%20Resume&body=Hi%20Brenden%2C%0A%0AI'm%20requesting%20your%20resume.%20Company%3A%20%0ARole%3A"
+                        class="btn btn-cta">Request Resume</a>
+                    <a href="mailto:bnoblitt99@gmail.com" class="btn btn-cta btn-ghost">Let's Talk</a>
+                </div>
+
+                <div class="socials mt-4">
+                    <a href="https://github.com/brendenmnoblitt" target="_blank" class="social-link"><i
+                            class="fa-brands fa-2x fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/brendennoblitt" target="_blank" class="social-link"><i
+                            class="fa-brands fa-2x fa-linkedin"></i></a>
+                    <a href="mailto:bnoblitt99@gmail.com" target="_blank" class="social-link"><i
+                            class="fa-solid fa-2x fa-envelope"></i></a>
                 </div>
             </div>
         </section>
+
+        <!-- About -->
+        <section class="container mt-3 mb-5 text-center" id="about-me-section">
+            <h2 class="mb-5">About Me</h2>
+            <p class="lead">
+                I’m a <code>software developer</code> based in Dallas–Fort Worth, TX. I build full-stack applications
+                and AI systems for
+                <a href="https://www.mouser.com/" target="_blank">Mouser Electronics</a> while pursuing my M.S. in
+                Computer Science at
+                <a href="https://www.tamuc.edu/" target="_blank">Texas A&M University–Commerce</a>.
+            </p>
+
+            <!-- What I'm Working On -->
+            <section class="my-5">
+                <h2 class="mb-4">What I’m Working On</h2>
+                <p class="lead">
+                    🎓 Publishing a paper on trustworthy AI<br />
+                    ⚙️ Experimenting with fine-tuning AI models on large text corpora<br />
+                    🧩 Exploring Golang and systems design in my spare time
+                </p>
+            </section>
+
+            <!-- Timeline -->
+            <h2 class="mb-5">Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">May 2021</span> — <span class="role">B.S. Marketing Analytics</span> @ <span
+                        class="company">Oklahoma State University</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">Jun 2021</span> — <span class="role">Marketing Analyst</span> @ <span
+                        class="company">Mouser Electronics</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">Feb 2022</span> — <span class="role">BI Developer I</span> @ <span
+                        class="company">Mouser Electronics</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">Dec 2022</span> — <span class="role">BI Developer II</span> @ <span
+                        class="company">Mouser Electronics</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">Jan 2025</span> — <span class="role">Started M.S. Computer Science</span> @ <span
+                        class="company">TAMUC</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">Jun 2025</span> — <span class="role">BI Developer III</span> @ <span
+                        class="company">Mouser Electronics</span>
+                    <span class="badge">Current</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Philosophy -->
+        <section class="container my-5 text-center" id="philosophy-section">
+            <blockquote class="lead fst-italic">
+                “I believe that reliable, maintainable infrastructure is the foundation for innovation — the quieter the
+                system, the better the design.”
+            </blockquote>
+        </section>
+
+        <!-- Impact -->
+        <section class="container my-5 text-center" id="impact-section">
+            <h2 class="mb-4">Impact</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>+65%</h3>
+                    <p>Reduction in pipeline runtime through modular Airflow refactoring and optimization</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>&lt;5 min</h3>
+                    <p>Average deployment time after CICD/Docker automation with environment caching and custom images
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>600k</h3>
+                    <p>Average documents processed daily for AI model consumption</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Toolbox -->
+        <section class="container my-5 text-center" id="toolbox-section">
+            <h2 class="mb-4">Toolbox</h2>
+            <p class="lead">A few of the tools I use every day:</p>
+            <div class="row">
+                <div class="col-md">
+                    <p>🧰 WSL / VSCode</p>
+                </div>
+                <div class="col-md">
+                    <p>🐍 Python / Go / C/C++</p>
+                </div>
+                <div class="col-md">
+                    <p>☁️ Airflow, Snowflake, Docker</p>
+                </div>
+                <div class="col-md">
+                    <p>🧠 FastAPI, Flask, React</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
         <section class="container my-5 text-center" id="skills-section">
             <h2 class="mb-5">Skills</h2>
             <div class="container-sm pt-2">
@@ -150,16 +207,11 @@
                         <div class="card mb-5">
                             <div class="card-body">
                                 <h4>Programming</h4>
-                                <div class="container pt-2">
-                                    <i class="fa-brands fa-2x fa-python"></i>
-                                    <p>Python</p>
-                                    <i class="fa-brands fa-2x fa-microsoft"></i>
-                                    <p>C#</p>
-                                    <i class="fa-brands fa-2x fa-golang"></i>
-                                    <p>Go</p>
-                                    <i class="fa-brands fa-2x fa-js"></i>
-                                    <p>JavaScript</p>
-                                    <i class="fa-solid fa-2x fa-database"></i>
+                                <div class="container pt-2"> <i class="fa-brands fa-2x fa-python"></i>
+                                    <p>Python</p> <i class="fa-brands fa-2x fa-microsoft"></i>
+                                    <p>C#</p> <i class="fa-brands fa-2x fa-golang"></i>
+                                    <p>Go</p> <i class="fa-brands fa-2x fa-js"></i>
+                                    <p>JavaScript</p> <i class="fa-solid fa-2x fa-database"></i>
                                     <p>SQL</p>
                                 </div>
                             </div>
@@ -169,16 +221,11 @@
                         <div class="card mb-5">
                             <div class="card-body">
                                 <div class="container pt-2">
-                                    <h4>Frameworks</h4>
-                                    <i class="fa-brands fa-2x fa-python"></i>
-                                    <p>Flask</p>
-                                    <i class="fa-brands fa-2x fa-python"></i>
-                                    <p>FastAPI</p>
-                                    <i class="fa-brands fa-2x fa-microsoft"></i>
-                                    <p>.NET Core</p>
-                                    <i class="fa-brands fa-2x fa-js"></i>
-                                    <p>React.js</p>
-                                    <i class="fa-brands fa-2x fa-js"></i>
+                                    <h4>Frameworks</h4> <i class="fa-brands fa-2x fa-python"></i>
+                                    <p>Flask</p> <i class="fa-brands fa-2x fa-python"></i>
+                                    <p>FastAPI</p> <i class="fa-brands fa-2x fa-microsoft"></i>
+                                    <p>.NET Core</p> <i class="fa-brands fa-2x fa-js"></i>
+                                    <p>React.js</p> <i class="fa-brands fa-2x fa-js"></i>
                                     <p>Vue.js</p>
                                 </div>
                             </div>
@@ -188,14 +235,10 @@
                         <div class="card mb-5">
                             <div class="card-body">
                                 <h4>Databases</h4>
-                                <div class="container pt-2">
-                                    <i class="fa-solid fa-2x fa-database"></i>
-                                    <p>Microsoft SQL Server</p>
-                                    <i class="fa-solid fa-2x fa-database"></i>
-                                    <p>PostreSQL</p>
-                                    <i class="fa-solid fa-2x fa-database"></i>
-                                    <p>SQLite</p>
-                                    <i class="fa-solid fa-2x fa-file"></i>
+                                <div class="container pt-2"> <i class="fa-solid fa-2x fa-database"></i>
+                                    <p>Microsoft SQL Server</p> <i class="fa-solid fa-2x fa-database"></i>
+                                    <p>PostgreSQL</p> <i class="fa-solid fa-2x fa-database"></i>
+                                    <p>SQLite</p> <i class="fa-solid fa-2x fa-file"></i>
                                     <p>MongoDB</p>
                                 </div>
                             </div>
@@ -205,68 +248,79 @@
                         <div class="card mb-5">
                             <div class="card-body">
                                 <h4>Cloud</h4>
-                                <div class="container pt-2">
-                                    <i class="fa-solid fa-2x fa-snowflake"></i>
-                                    <p>Snowflake</p>
-                                    <i class="fa-brands fa-2x fa-windows"></i>
-                                    <p>Microsoft Azure</p>
-                                    <i class="fa-brands fa-2x fa-google"></i>
+                                <div class="container pt-2"> <i class="fa-solid fa-2x fa-snowflake"></i>
+                                    <p>Snowflake</p> <i class="fa-brands fa-2x fa-windows"></i>
+                                    <p>Microsoft Azure</p> <i class="fa-brands fa-2x fa-google"></i>
                                     <p>Google Cloud Platform</p>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Projects -->
         <section class="container my-5" id="latest-projects-section">
-            <h2 class="text-center mb-5">My Latest Projects</h2>
+            <h2 class="text-center mb-5">Featured Projects</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h3 class="card-title">Pro Roster Showcase</h3>
-                            <p class="card-text">Stack: Python, JS, Vue.js, MongoDB</p>
-                            <p class="card-text">Fetches Overwatch pro league data and displays in UI by team and
-                                player.</p>
-                            <a href="https://github.com/brendenmnoblitt/owl_app_pub" class="btn btn-primary"
-                                target="_blank">Visit My GitHub</a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title">Pro Roster Showcase</h3>
+                                <p class="card-text">Stack: Python, JS, Vue.js, MongoDB</p>
+                                <p class="card-text">Fetches Overwatch pro league data and displays in UI by team and
+                                    player.</p> <a href="https://github.com/brendenmnoblitt/owl_app_pub"
+                                    class="btn btn-primary" target="_blank">Visit My GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3>Weather API Console App</h3>
+                                <p>Stack: C#</p>
+                                <p>Console app that displays Weather from weather API's. </p> <a
+                                    href="https://github.com/brendenmnoblitt/WeatherAPI-Console-App"
+                                    class="btn btn-primary" target="_blank">Visit My GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3>MVC Email Reader</h3>
+                                <p>Stack: C#, JS</p>
+                                <p>A basic Gmail reader built in a model-view-controller architecture.</p> <a
+                                    href="https://github.com/brendenmnoblitt/email-reader-mvc/" class="btn btn-primary"
+                                    target="_blank">Visit My GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h3>Weather API Console App</h3>
-                            <p>Stack: C#</p>
-                            <p>Console app that displays Weather from weather API's.
-                            </p>
-                            <a href="https://github.com/brendenmnoblitt/WeatherAPI-Console-App" class="btn btn-primary"
-                                target="_blank">Visit My GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h3>MVC Email Reader</h3>
-                            <p>Stack: C#, JS</p>
-                            <p>A basic Gmail reader built in a model-view-controller architecture.</p>
-                            <a href="https://github.com/brendenmnoblitt/email-reader-mvc/" class="btn btn-primary"
-                                target="_blank">Visit My GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="container my-5 text-center" id="contact-section">
+            <h2 class="mb-4">Let’s Connect</h2>
+            <p class="lead">
+                Interested in collaborating, learning, or talking systems design?
+                <br />
+                <a href="mailto:bnoblitt99@gmail.com" class="btn btn-cta mt-3">Email Me</a>
+                or connect on
+                <a href="https://www.linkedin.com/in/brendennoblitt" target="_blank">LinkedIn</a>.
+            </p>
         </section>
     </main>
-    <footer class="text-white py-4">
-        <div class="container text-center">
+
+    <footer class="text-white py-4 text-center">
+        <div class="container">
             <p>Powered by Flask | Hosted by PythonAnywhere</p>
             <p>&copy; Brenden Noblitt 2025</p>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="static/js/scripts.js"></script>
 </body>
